@@ -1,0 +1,23 @@
+C:\Users\Jayden\OneDrive\Company\Tabber Apps\Tabber\Applications\Tabber-Goals\Tabber Goals\bin\Debug\Tabber Goals.exe.config
+C:\Users\Jayden\OneDrive\Company\Tabber Apps\Tabber\Applications\Tabber-Goals\Tabber Goals\bin\Debug\Tabber Goals.exe
+C:\Users\Jayden\OneDrive\Company\Tabber Apps\Tabber\Applications\Tabber-Goals\Tabber Goals\bin\Debug\Tabber Goals.pdb
+C:\Users\Jayden\OneDrive\Company\Tabber Apps\Tabber\Applications\Tabber-Goals\Tabber Goals\obj\Debug\Tabber Goals.csproj.AssemblyReference.cache
+C:\Users\Jayden\OneDrive\Company\Tabber Apps\Tabber\Applications\Tabber-Goals\Tabber Goals\obj\Debug\Main\MainWindow.g.cs
+C:\Users\Jayden\OneDrive\Company\Tabber Apps\Tabber\Applications\Tabber-Goals\Tabber Goals\obj\Debug\App.g.cs
+C:\Users\Jayden\OneDrive\Company\Tabber Apps\Tabber\Applications\Tabber-Goals\Tabber Goals\obj\Debug\Tabber Goals_MarkupCompile.cache
+C:\Users\Jayden\OneDrive\Company\Tabber Apps\Tabber\Applications\Tabber-Goals\Tabber Goals\obj\Debug\Tabber Goals_MarkupCompile.lref
+C:\Users\Jayden\OneDrive\Company\Tabber Apps\Tabber\Applications\Tabber-Goals\Tabber Goals\obj\Debug\Main\MainWindow.baml
+C:\Users\Jayden\OneDrive\Company\Tabber Apps\Tabber\Applications\Tabber-Goals\Tabber Goals\obj\Debug\Tabber Goals.g.resources
+C:\Users\Jayden\OneDrive\Company\Tabber Apps\Tabber\Applications\Tabber-Goals\Tabber Goals\obj\Debug\Tabber_Goals.Properties.Resources.resources
+C:\Users\Jayden\OneDrive\Company\Tabber Apps\Tabber\Applications\Tabber-Goals\Tabber Goals\obj\Debug\Tabber Goals.csproj.GenerateResource.cache
+C:\Users\Jayden\OneDrive\Company\Tabber Apps\Tabber\Applications\Tabber-Goals\Tabber Goals\obj\Debug\Tabber Goals.csproj.CoreCompileInputs.cache
+C:\Users\Jayden\OneDrive\Company\Tabber Apps\Tabber\Applications\Tabber-Goals\Tabber Goals\obj\Debug\Tabber Goals.exe
+C:\Users\Jayden\OneDrive\Company\Tabber Apps\Tabber\Applications\Tabber-Goals\Tabber Goals\obj\Debug\Tabber Goals.pdb
+C:\Users\Jayden\OneDrive\Company\Tabber Apps\Tabber\Applications\Tabber-Goals\Tabber Goals\obj\Debug\Styles\RoundedLabel.baml
+C:\Users\Jayden\OneDrive\Company\Tabber Apps\Tabber\Applications\Tabber-Goals\Tabber Goals\obj\Debug\App.baml
+C:\Users\Jayden\OneDrive\Company\Tabber Apps\Tabber\Applications\Tabber-Goals\Tabber Goals\bin\Debug\Tabber Goals.exe.manifest
+C:\Users\Jayden\OneDrive\Company\Tabber Apps\Tabber\Applications\Tabber-Goals\Tabber Goals\bin\Debug\Tabber Goals.application
+C:\Users\Jayden\OneDrive\Company\Tabber Apps\Tabber\Applications\Tabber-Goals\Tabber Goals\obj\Debug\Tabber Goals.exe.manifest
+C:\Users\Jayden\OneDrive\Company\Tabber Apps\Tabber\Applications\Tabber-Goals\Tabber Goals\obj\Debug\Tabber Goals.application
+C:\Users\Jayden\OneDrive\Company\Tabber Apps\Tabber\Applications\Tabber-Goals\Tabber Goals\obj\Debug\Styles\Titlebar\TitlebarButtons.baml
+C:\Users\Jayden\OneDrive\Company\Tabber Apps\Tabber\Applications\Tabber-Goals\Tabber Goals\obj\Debug\Styles\RoundedComboBox.baml
