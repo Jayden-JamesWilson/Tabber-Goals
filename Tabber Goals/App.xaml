@@ -2,14 +2,11 @@
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:local="clr-namespace:Tabber_Goals"
-             StartupUri="/Main/MainWindow.xaml">
+             StartupUri="/Loading/LoadingScreen.xaml">
     <Application.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="Styles/RoundedLabel.xaml"/>
-                <ResourceDictionary Source="Styles/RoundedComboBox.xaml"/>
-                <!--Titlebar Buttons-->
-                <ResourceDictionary Source="Styles/Titlebar/TitlebarButtons.xaml"/>
+                <ResourceDictionary Source="Styles/Loading/LoadingScreenButtons.xaml"/>
 
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
