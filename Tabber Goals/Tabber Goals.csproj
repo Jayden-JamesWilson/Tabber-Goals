@@ -72,6 +72,7 @@
     <Reference Include="PresentationFramework.Aero2" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -93,6 +94,24 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Components\Goal Component\GoalComponentControl.xaml.cs">
+      <DependentUpon>GoalComponentControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Components\Goal Component\IGoalComponent.cs" />
+    <Compile Include="Loading\LoadingService.cs" />
+    <Compile Include="Main\MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Main\MainWindowClass.cs" />
+    <Compile Include="TabberUI\FluentTabberButton\FluentTabberTextButton.xaml.cs">
+      <DependentUpon>FluentTabberTextButton.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TabberUI\FluentTabberButton\FluentTabberImageButton.xaml.cs">
+      <DependentUpon>FluentTabberImageButton.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TabberUI\FluentTabberSeperator\FluentTabberSeperator.xaml.cs">
+      <DependentUpon>FluentTabberSeperator.xaml</DependentUpon>
     </Compile>
     <Compile Include="Utilities\WindowUtilities.cs" />
   </ItemGroup>
@@ -129,9 +148,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Assets\App Images\Tabber-Goals-96px.png" />
-  </ItemGroup>
-  <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
       <Visible>False</Visible>
       <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
@@ -144,26 +160,69 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Assets\Titlebar\Maximize-96px.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Assets\Titlebar\Close-96px.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Assets\Titlebar\Minimize-96px.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Main\" />
-  </ItemGroup>
-  <ItemGroup>
+    <Page Include="Components\Goal Component\GoalComponentControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Loading\LoadingScreen.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Styles\Loading\LoadingScreenButtons.xaml">
+    <Page Include="Main\MainWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Styles\Toolbar\CreateButtonStyle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Styles\Titlebar\TitlebarButtonsStyle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Styles\Toolbar\ToolbarButtonsStyle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="TabberUI\FluentTabberButton\FluentTabberTextButton.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="TabberUI\FluentTabberButton\FluentTabberImageButton.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="TabberUI\FluentTabberSeperator\FluentTabberSeperator.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\App Icons\Tabber-Goals-96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\Main Window\Toolbar\Delete-Selected-25px.png" />
+    <Resource Include="Assets\Main Window\Toolbar\Delete-Unselected-25px.png" />
+    <Resource Include="Assets\Main Window\Toolbar\Favourite-Selected-25px.png" />
+    <Resource Include="Assets\Main Window\Toolbar\Favourite-Unselected-25px.png" />
+    <Resource Include="Assets\Main Window\Toolbar\Tiles-Selected-25px.png" />
+    <Resource Include="Assets\Main Window\Toolbar\Tiles-Unselected-25px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\App Icons\Tabber-Goals-25px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\App Icons\Tabber-Goals-32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Database\TabberGoalsDatabase.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Database\TabberGoalsDatabase_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>TabberGoalsDatabase.mdf</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -1,0 +1,22 @@
+﻿<UserControl x:Class="Tabber_Goals.TabberUI.FluentTabberButton.FluentTabberImageButton"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Tabber_Goals.TabberUI.FluentTabberButton"
+             mc:Ignorable="d" Name="FluentTabberImageButton1" d:DesignHeight="20" d:DesignWidth="80">
+
+    <Button x:Name="Button" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Click="Button_Click">
+        <Button.Template>
+            <ControlTemplate TargetType="Button">
+                <Border CornerRadius="{Binding Path=FluentTabberImageButton_CornerRadius, ElementName=FluentTabberImageButton1, FallbackValue=5}" 
+                        Background="{Binding Path=FluentTabberImageButton_BackgroundColour, ElementName=FluentTabberImageButton1, FallbackValue=White}">
+                    
+                    <Image Stretch="UniformToFill"
+                           Margin="5,5,5,5" 
+                           Source="{Binding Path=FluentTabberImageButton_ImageSource, ElementName=FluentTabberImageButton1, FallbackValue='Assets/Main Window/Toolbar/Tiles-Unselected.png'}" />
+                </Border>
+            </ControlTemplate>
+        </Button.Template>
+    </Button>
+</UserControl>

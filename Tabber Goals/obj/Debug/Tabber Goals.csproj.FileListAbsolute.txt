@@ -18,4 +18,19 @@ C:\Users\Jayden\OneDrive\Company\Tabber Apps\Tabber\Applications\Tabber-Goals\Ta
 C:\Users\Jayden\OneDrive\Company\Tabber Apps\Tabber\Applications\Tabber-Goals\Tabber Goals\obj\Debug\Tabber Goals.application
 C:\Users\Jayden\OneDrive\Company\Tabber Apps\Tabber\Applications\Tabber-Goals\Tabber Goals\obj\Debug\Loading\LoadingScreen.g.cs
 C:\Users\Jayden\OneDrive\Company\Tabber Apps\Tabber\Applications\Tabber-Goals\Tabber Goals\obj\Debug\Loading\LoadingScreen.baml
-C:\Users\Jayden\OneDrive\Company\Tabber Apps\Tabber\Applications\Tabber-Goals\Tabber Goals\obj\Debug\Styles\Loading\LoadingScreenButtons.baml
+C:\Users\Jayden\OneDrive\Company\Tabber Apps\Tabber\Applications\Tabber-Goals\Tabber Goals\obj\Debug\Main\MainWindow.g.cs
+C:\Users\Jayden\OneDrive\Company\Tabber Apps\Tabber\Applications\Tabber-Goals\Tabber Goals\obj\Debug\Main\MainWindow.baml
+C:\Users\Jayden\OneDrive\Company\Tabber Apps\Tabber\Applications\Tabber-Goals\Tabber Goals\obj\Debug\TabberUI\FluentTabberButton\FluentTabberImageButton.g.cs
+C:\Users\Jayden\OneDrive\Company\Tabber Apps\Tabber\Applications\Tabber-Goals\Tabber Goals\obj\Debug\TabberUI\FluentTabberButton\FluentTabberImageButton.baml
+C:\Users\Jayden\OneDrive\Company\Tabber Apps\Tabber\Applications\Tabber-Goals\Tabber Goals\obj\Debug\TabberUI\FluentTabberButton\FluentTabberTextButton.g.cs
+C:\Users\Jayden\OneDrive\Company\Tabber Apps\Tabber\Applications\Tabber-Goals\Tabber Goals\obj\Debug\TabberUI\FluentTabberButton\FluentTabberTextButton.baml
+C:\Users\Jayden\OneDrive\Company\Tabber Apps\Tabber\Applications\Tabber-Goals\Tabber Goals\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Jayden\OneDrive\Company\Tabber Apps\Tabber\Applications\Tabber-Goals\Tabber Goals\obj\Debug\Styles\Titlebar\TitlebarButtonsStyle.baml
+C:\Users\Jayden\OneDrive\Company\Tabber Apps\Tabber\Applications\Tabber-Goals\Tabber Goals\obj\Debug\TabberUI\FluentTabberSeperator\FluentTabberSeperator.g.cs
+C:\Users\Jayden\OneDrive\Company\Tabber Apps\Tabber\Applications\Tabber-Goals\Tabber Goals\obj\Debug\TabberUI\FluentTabberSeperator\FluentTabberSeperator.baml
+C:\Users\Jayden\OneDrive\Company\Tabber Apps\Tabber\Applications\Tabber-Goals\Tabber Goals\obj\Debug\Styles\Toolbar\ToolbarButtonsStyle.baml
+C:\Users\Jayden\OneDrive\Company\Tabber Apps\Tabber\Applications\Tabber-Goals\Tabber Goals\obj\Debug\Styles\Toolbar\CreateButtonStyle.baml
+C:\Users\Jayden\OneDrive\Company\Tabber Apps\Tabber\Applications\Tabber-Goals\Tabber Goals\bin\Debug\Database\TabberGoalsDatabase.mdf
+C:\Users\Jayden\OneDrive\Company\Tabber Apps\Tabber\Applications\Tabber-Goals\Tabber Goals\bin\Debug\Database\TabberGoalsDatabase_log.ldf
+C:\Users\Jayden\OneDrive\Company\Tabber Apps\Tabber\Applications\Tabber-Goals\Tabber Goals\obj\Debug\Tabber Goals_Content.g.cs
+C:\Users\Jayden\OneDrive\Company\Tabber Apps\Tabber\Applications\Tabber-Goals\Tabber Goals\obj\Debug\Components\Goal Component\GoalComponentControl.g.cs

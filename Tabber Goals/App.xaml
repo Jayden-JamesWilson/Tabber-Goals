@@ -6,8 +6,9 @@
     <Application.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="Styles/Loading/LoadingScreenButtons.xaml"/>
-
+                <ResourceDictionary Source="Styles/Titlebar/TitlebarButtonsStyle.xaml"/>
+                <ResourceDictionary Source="Styles/Toolbar/ToolbarButtonsStyle.xaml"/>
+                <ResourceDictionary Source="Styles/Toolbar/CreateButtonStyle.xaml"/>
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>

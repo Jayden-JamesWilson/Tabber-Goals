@@ -42,17 +42,35 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Tabber Goals.exe" size="18912">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Tabber Goals.exe" size="50656">
       <assemblyIdentity name="Tabber Goals" version="1.0.0.0" language="neutral" processorArchitecture="amd64" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>peTai87CWyqPm23rMUhXEdHj2MG9+HpTHeRUDA9pSzE=</dsig:DigestValue>
+        <dsig:DigestValue>n6CSkiHhWsd2YEQ3BIjdncbdg4JUDYqSTNTl+FOLaEU=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
+  <file name="Database\TabberGoalsDatabase.mdf" size="8388608" writeableType="applicationData">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>9ek+pPulFuuLnw3iVvXpxlpXM9xarEmf4+23GRWAuPQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Database\TabberGoalsDatabase_log.ldf" size="8388608" writeableType="applicationData">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>MVU//Ycs7vPPdfhl+Sozur6RUTnOAEXqc1LzwPWrmJ8=</dsig:DigestValue>
+    </hash>
+  </file>
   <file name="Tabber Goals.exe.config" size="189">
     <hash>
       <dsig:Transforms>

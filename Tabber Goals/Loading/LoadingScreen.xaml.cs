@@ -11,6 +11,8 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using Tabber_Goals.Main;
+using Tabber_Goals.Utilities;
 
 namespace Tabber_Goals.Loading
 {
@@ -27,17 +29,20 @@ namespace Tabber_Goals.Loading
         {
             InitializeComponent();
 
-            LoadingScreenClass.Loading(5, this);
+            MainWindow MainWindow = new MainWindow();
+            LoadingScreenClass.Loading(5, this, MainWindow);
         }
 
-        private void CloseButton_Click(object sender, RoutedEventArgs e)
+        #region Window Based Events
+        public void TitlebarButtons_Click(object sender, EventArgs e)
         {
-            LoadingScreenClass.CloseWindow(sender);
+            LoadingScreenClass.TitlebarButtons_Click(sender);
         }
 
         private void LoadingWindow_MouseDown(object sender, MouseButtonEventArgs e)
         {
             LoadingScreenClass.MoveWindow(sender);
         }
+        #endregion
     }
 }

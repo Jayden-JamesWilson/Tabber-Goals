@@ -5,6 +5,10 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Input;
+using System.Windows.Media.Media3D;
+using System.Drawing;
+using Tabber_Goals.TabberUI.FluentTabberButton;
 
 namespace Tabber_Goals.Utilities
 {
@@ -12,74 +16,44 @@ namespace Tabber_Goals.Utilities
     {
         public static void HideWindow(object sender)
         {
-            if (sender != null)
+            if (sender is DependencyObject Button && Window.GetWindow(Button) is Window CurrentWindow)
             {
-                // Get the window that the sender is located in.
-                Window CurrentWindow = Window.GetWindow((DependencyObject)sender);
-
-                if (CurrentWindow != null)
-                {
-                    // Close the current window.
-                    CurrentWindow.Hide();
-                }
+                // Hide the current window.
+                CurrentWindow.Hide();
             }
         }
 
         public static void CloseWindow(object sender)
         {
-            if (sender != null)
-            {
-                // Get the window that the sender is located in.
-                Window CurrentWindow = Window.GetWindow((DependencyObject)sender);
 
-                if (CurrentWindow != null)
-                {
-                    // Close the current window.
-                    CurrentWindow.Close();
-                }
+            if (sender is DependencyObject Button && Window.GetWindow(Button) is Window CurrentWindow) 
+            {
+                // Close the current window.
+                CurrentWindow.Close();
             }
         }
 
         public static void MinimizeWindow(object sender)
-        {        
-            if (sender != null)
+        {
+            if (sender is DependencyObject Button && Window.GetWindow(Button) is Window CurrentWindow)
             {
-                // Get the window that the sender is located in.
-                Window CurrentWindow = Window.GetWindow((DependencyObject)sender);
-
-                if (CurrentWindow != null)
-                {
-                    // Minimize the current window.
-                    CurrentWindow.WindowState = WindowState.Minimized;
-                }
+                // Minimize the current window.
+                CurrentWindow.WindowState = WindowState.Minimized;
             }
         }
-
+        
         public static void MaximizeWindow(object sender)
         {
-            if (sender != null)
+            if (sender is DependencyObject Button && Window.GetWindow(Button) is Window CurrentWindow)
             {
-                // Get the window that the sender is located in.
-                Window CurrentWindow = Window.GetWindow((DependencyObject)sender);
-
-                if (CurrentWindow != null)
+                // Maximize the current window if collapsed  and collapse the current window if maximized.
+                if (CurrentWindow.WindowState == WindowState.Normal)
                 {
-                    // Mazimize the current window.
+
                     CurrentWindow.WindowState = WindowState.Maximized;
                 }
-            }
-        }
-
-        public static void CollapseWindow(object sender)
-        {
-            if (sender != null)
-            {
-                // Get the window that the sender is located in.
-                Window CurrentWindow = Window.GetWindow((DependencyObject)sender);
-
-                if (CurrentWindow != null)
+                else
                 {
-                    // Collapse the current window.
                     CurrentWindow.WindowState = WindowState.Normal;
                 }
             }
@@ -87,16 +61,26 @@ namespace Tabber_Goals.Utilities
 
         public static void MoveWindow(object sender)
         {
-            if (sender != null)
-            {
-                // Get the window that the sender is located in.
-                Window CurrentWindow = Window.GetWindow((DependencyObject)sender);
+            // TODO
+            // Important to note this is awkward and unstable on a multiple monitor setup
+            // as when CurrentWindow is collapsed and location is set, the CurrentWindows
+            // location is on the primary monitor. 
 
-                if (CurrentWindow != null)
+            if (sender is DependencyObject Button && Window.GetWindow(Button) is Window CurrentWindow)
+            {
+                // Move the current window.
+                if (CurrentWindow.WindowState == WindowState.Maximized)
                 {
-                    // Move the current window.
-                    CurrentWindow.DragMove();
+                    CurrentWindow.WindowState = WindowState.Normal; ;
+
+                    // Adjust the window position
+                    Point cursorPosition = Mouse.GetPosition(CurrentWindow);
+
+                    CurrentWindow.Left = cursorPosition.X - (CurrentWindow.Width / 2);
+                    CurrentWindow.Top = cursorPosition.Y - 20;
                 }
+
+                CurrentWindow.DragMove();
             }
         }
 
@@ -105,5 +89,31 @@ namespace Tabber_Goals.Utilities
             // Shutdown application
             Application.Current.Shutdown();
         }
+
+        public static void TitlebarButtons_Click(object sender)
+        {
+            FluentTabberTextButton TitleBarButton = (FluentTabberTextButton)sender;
+
+            switch (TitleBarButton.Name)
+            {
+                case "CloseButton":
+                    CloseWindow(sender);
+                    break;
+
+                case "MinimizeButton":
+                    MinimizeWindow(sender);
+                    break;
+
+                case "MaximizeButton":
+                    MaximizeWindow(sender);
+                    break;
+
+                case "ShutdownButton":
+                    ApplicationShutdown();
+                    break;
+            }
+
+        }
+
     }
 }

@@ -3,19 +3,57 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Tabber_Goals.Loading"
+        xmlns:local="clr-namespace:Tabber_Goals.Loading" xmlns:FluentTabberButton="clr-namespace:Tabber_Goals.TabberUI.FluentTabberButton"
         mc:Ignorable="d"
-        Title="LoadingScreen" Height="237" Width="371"  ResizeMode="NoResize" WindowStartupLocation="CenterScreen" MouseDown="LoadingWindow_MouseDown">
+        Title="LoadingScreen" Height="245" Width="395"  ResizeMode="NoResize" WindowStartupLocation="CenterScreen" MouseDown="LoadingWindow_MouseDown">
     <WindowChrome.WindowChrome>
         <WindowChrome GlassFrameThickness="1" CornerRadius="10" CaptionHeight="0" ResizeBorderThickness="5"/>
     </WindowChrome.WindowChrome>
+
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="30"/>
-            <RowDefinition Height="217"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="217*"/>
         </Grid.RowDefinitions>
-        <Button x:Name="CloseButton" Style="{DynamicResource LoadingScreenButtonsFluent}" Margin="347,6,6,6" Content="✕" Click="CloseButton_Click"/>
-        <Image Height="70" Width="70" Grid.Row="1" Source="/Assets/App Images/Tabber-Goals-96px.png" Margin="151,38,150,109"/>
-        <TextBlock Margin="1,108,0,87" Grid.Row="1" TextAlignment="Center" FontSize="18"  Foreground="#555555" FontFamily="Segoe UI Variable Display" Text="Tabber Goals"/>
+
+        <Border Grid.Row="0">
+
+            <StackPanel FlowDirection="RightToLeft" Orientation="Horizontal">
+
+                <!--Close Button-->
+                <FluentTabberButton:FluentTabberTextButton Style="{DynamicResource FluentTabberTitlebarButtonStyle}"
+                    x:Name="ShutdownButton"
+                    Click="TitlebarButtons_Click"
+                    Margin="10,10,5,10"
+                    FluentTabberTextButton_Text="✕"
+   
+                    FluentTabberTextButton_BackgroundHoverColour="#B62D2D"
+                    FluentTabberTextButton_TextHoverColour="White"
+                    />
+            </StackPanel>
+        </Border>
+
+        <Border Grid.Row="1">
+            <StackPanel>
+                <Image 
+                    Margin="0,20,0,0"
+                    Height="90"
+                    Width="90" 
+                    VerticalAlignment="Top" 
+                    HorizontalAlignment="Center"
+                    Source="/Assets/App Icons/Tabber-Goals-96px.png"
+                 />
+
+                <TextBlock
+                    Text="Tabber Goals"
+                    Foreground="#5F5F5F"
+                    FontSize="20"
+                    FontFamily="Segoe UI Variable Display"
+                    TextAlignment="Center"
+                    
+                />
+            
+            </StackPanel>
+        </Border>
     </Grid>
 </Window>

@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\Jayden\OneDrive\Company\Tabber Apps\Tabber\Applications\Tabber-Goals\Tabber Goals\App.xaml
-2293668849
-
-8-657045870
-14-1199688468
-Loading\LoadingScreen.xaml;Styles\Loading\LoadingScreenButtons.xaml;
+9548645671
+2-67780508
+16-868134925
+15-1901237141
+Components\Goal Component\GoalComponentControl.xaml;Loading\LoadingScreen.xaml;Main\MainWindow.xaml;Styles\Toolbar\CreateButtonStyle.xaml;Styles\Titlebar\TitlebarButtonsStyle.xaml;Styles\Toolbar\ToolbarButtonsStyle.xaml;TabberUI\FluentTabberButton\FluentTabberTextButton.xaml;TabberUI\FluentTabberButton\FluentTabberImageButton.xaml;TabberUI\FluentTabberSeperator\FluentTabberSeperator.xaml;
 
 False
 

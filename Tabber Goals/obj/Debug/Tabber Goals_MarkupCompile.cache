@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Jayden\OneDrive\Company\Tabber Apps\Tabber\Applications\Tabber-Goals\Tabber Goals\obj\Debug\
+C:\Users\Tabbe\Downloads\Tabber-Goals\Tabber Goals\obj\Debug\
 Tabber_Goals
 none
 false
 DEBUG;TRACE
-C:\Users\Jayden\OneDrive\Company\Tabber Apps\Tabber\Applications\Tabber-Goals\Tabber Goals\App.xaml
-2293668849
+C:\Users\Tabbe\Downloads\Tabber-Goals\Tabber Goals\App.xaml
+9548645671
+2-67780508
+16-868134925
+15-1901237141
+Components\Goal Component\GoalComponentControl.xaml;Loading\LoadingScreen.xaml;Main\MainWindow.xaml;Styles\Toolbar\CreateButtonStyle.xaml;Styles\Titlebar\TitlebarButtonsStyle.xaml;Styles\Toolbar\ToolbarButtonsStyle.xaml;TabberUI\FluentTabberButton\FluentTabberTextButton.xaml;TabberUI\FluentTabberButton\FluentTabberImageButton.xaml;TabberUI\FluentTabberSeperator\FluentTabberSeperator.xaml;
 
-71425042748
-14-1199688468
-Loading\LoadingScreen.xaml;Styles\Loading\LoadingScreenButtons.xaml;
-
-False
+True
 
